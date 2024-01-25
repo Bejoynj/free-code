@@ -22,96 +22,111 @@
           <header class="flex flex-col space-y-[10px]">
             <h2 class="text-[22px] sm:text-[32px] font-bold ">Book an Appointment</h2>
             <p class="text-sm sm:text-base text-gray-600">Choose a time that works for you.</p>
-          </header>
-          <!-- form starts here -->
-          <form class="flex flex-col space-y-5 sm:space-y-[40px]" action="">
+        </header>
+        <!-- form starts here -->
+        <form class="flex flex-col space-y-5 sm:space-y-[40px]" action="">
             <div class="flex flex-col space-y-4">
-              <!-- Fullname & Available Slot -->
-              <div class="flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 justify-between ">
-                <div class="sm:basis-1/2">
-                  <label class="block text-gray-700 text-lg font-bold mb-2" for="fullname">Full Name</label>
-                  <input class="w-full bg-[#F6F9FF] border border-blue-50 rounded-md p-3" type="text" id="fullname"
-                    placeholder="e.g., John Doe" />
-                </div>
-                <div class="sm:basis-1/2">
-                  <label class="block text-gray-700 text-lg font-bold mb-2" for="timeslot">Available Time Slot</label>
-                  <div class="relative">
-                    <select class="w-full bg-[#F6F9FF] border border-blue-50 rounded-md p-3 appearance-none"
-                      id="timeslot">
-                      <option value="morning">08:00</option>
-                      <option value="afternoon">09:00</option>
-                      <option value="evening">10:00</option>
-                      <option value="evening">1:00</option>
-                      <option value="evening">12:00</option>
-                      <option value="evening">13:00</option>
-                      <option value="evening">14:00</option>
-                      <option value="evening">15:00</option>
-                      <option value="evening">16:00</option>
-                      <option value="evening">17:00</option>
-                    </select>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                      stroke="currentColor" class="absolute right-3 top-4 w-5 h-5">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                    </svg>
-                  </div>
-
-                </div>
-              </div>
-              <div class="flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0">
-                <div class="flex flex-col space-y-4 sm:basis-1/2">
-                  <!-- Email -->
-                  <div class="basis-full">
-                    <label class="block text-gray-700 text-lg font-bold mb-2" for="email">Email</label>
-                    <input class="w-full bg-[#F6F9FF] border border-blue-50 rounded-md p-3" type="email" id="email"
-                      placeholder="e.g., johndoe@email.com" />
-                  </div>
-
-                  <!-- Phone Number & Country Code -->
-                  <div class="basis-full">
-                    <label class="block text-gray-700 text-lg font-bold mb-2" for="phone">Phone Number</label>
-                    <div class="relative">
-                      <div class="relative">
-                        <select class="bg-transparent p-3 px-2 absolute top-0 left-0 focus:outline-none appearance-none"
-                          id="countryCode">
-                          <option value="+1">+1</option>
-                          <option value="+44">+44</option>
-                          <option value="+91">+91</option>
-                          <option value="+91">+971</option>
-                        </select>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                          stroke="currentColor" class="absolute right-3 top-4 w-5 h-5">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
-                      </div>
-                      <input class="w-full bg-[#F6F9FF] border border-blue-50 rounded-md pl-20 p-3" type="tel"
-                        id="phone" placeholder="eg: 098765432" />
+                <!-- Fullname & Available Slot -->
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 justify-between ">
+                    <div class="sm:basis-1/2">
+                        <label class="block text-gray-700 text-base font-medium mb-2" for="fullname">Full
+                            Name</label>
+                        <input class="w-full bg-[#F6F9FF] border border-blue-50 rounded-md p-3" type="text"
+                            id="fullname" placeholder="eg: John Doe" />
                     </div>
-                  </div>
+                    <div class="sm:basis-1/2">
+                        <label class="block text-gray-700 text-base font-medium mb-2" for="timeslot">Available
+                            Time
+                            Slot</label>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-[#F6F9FF] border border-blue-50 rounded-md p-3 appearance-none"
+                                id="timeslot">
+                                <option value="morning">08:00</option>
+                                <option value="morning">09:00</option>
+                                <option value="morning">10:00</option>
+                                <option value="morning">11:00</option>
+                                <option value="afternoon">12:00</option>
+                                <option value="afternoon">13:00</option>
+                                <option value="afternoon">14:00</option>
+                                <option value="afternoon">15:00</option>
+                                <option value="afternoon">16:00</option>
+                                <option value="evening">17:00</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor"
+                                class="absolute right-3 top-4 w-5 h-5 pointer-events-none">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+
+                    </div>
                 </div>
-                <!-- Share Your Message -->
-                <div class="sm:basis-1/2">
-                  <label class="block text-gray-700 text-lg font-bold mb-2" for="message">Share Your Message</label>
-                  <textarea
-                    class="w-full bg-[#F6F9FF] border border-blue-50 rounded-md p-3 resize-none min-h-24 sm:h-[calc(100%-38px)]"
-                    id="message" placeholder="Message"></textarea>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0">
+                    <div class="flex flex-col space-y-4 sm:basis-1/2">
+                        <!-- Email -->
+                        <div class="basis-full">
+                            <label class="block text-gray-700 text-base font-medium mb-2"
+                                for="email">Email</label>
+                            <input class="w-full bg-[#F6F9FF] border border-blue-50 rounded-md p-3"
+                                type="email" id="email" placeholder="eg: johndoe@email.com" />
+                        </div>
+
+                        <!-- Phone Number & Country Code -->
+                        <div class="basis-full">
+                            <label class="block text-gray-700 text-base font-medium mb-2" for="phone">Phone
+                                Number</label>
+                            <div class="flex flex-row space-0-0 bg-[#F6F9FF] border border-blue-50 rounded-md">
+                                <div class="relative w-[120px]">
+                                    <select
+                                        class="w-full bg-transparent border border-transparent p-3 top-0 left-0 focus:outline-none appearance-none"
+                                        id="countryCode">
+                                        <option value="+1">+1</option>
+                                        <option value="+44">+44</option>
+                                        <option value="+91">+91</option>
+                                        <option value="+91">+971</option>
+                                    </select>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="absolute right-3 top-4 w-5 h-5 pointer-events-none">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </div>
+                                <input
+                                    class="w-full bg-transparent  border border-transparent  p-3"
+                                    type="tel" id="phone" placeholder="eg: 098765432" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Share Your Message -->
+                    <div class="sm:basis-1/2">
+                        <label class="block text-gray-700 text-base font-medium mb-2" for="message">Share Your
+                            Message</label>
+                        <textarea
+                            class="w-full bg-[#F6F9FF] border border-blue-50 rounded-md p-3 resize-none min-h-24 sm:h-[calc(100%-38px)]"
+                            id="message" placeholder="Message"></textarea>
+                    </div>
                 </div>
-              </div>
             </div>
             <!-- form submit buttons -->
-            <div class="flex flex-row space-x-4 justify-end">
-              <button class="bg-transparent hover:bg-blue-50 text-[#3B82F6] px-5 p-3 rounded-md text-center">
-                Cancel
-              </button>
-              <button
-                class="bg-[#3B82F6] hover:bg-[#3A7CE8] text-white px-5 p-3 rounded-md flex items-center justify-end">
-                <span class="pr-2">Book Now </span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="w-4 h-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-              </button>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-end">
+                <button
+                    class="bg-transparent hover:bg-blue-50 text-[#3B82F6] px-5 p-3 rounded-md text-center">
+                    Cancel
+                </button>
+                <button
+                    class="bg-[#3B82F6] hover:bg-[#3A7CE8] text-white px-5 p-3 rounded-md flex items-center justify-center sm:justify-end">
+                    <span class="pr-2">Book Now </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
             </div>
-          </form>
+        </form>
         </div>
 
       </div>
